@@ -2,8 +2,10 @@
 
 @section('content')
 <div class="container">
+
+<button class="button">Add User</button>
     <div class="row justify-content-center">
-        <div class="col-md-8" style="width:100%">
+        <div class="col-md-8" style="width:100%; padding-top:5px;">
             <!-- populate the users table from the users database table -->
             <table class="table" style="width:100%">
                 <thead>
