@@ -32,8 +32,8 @@
         <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header modal-header">
-                        <h5 class="modal-title" id="addUserModalLabel">Add User</h5>
+                    <div >
+                        <h5 class="modal-title" id="addUserModalLabel" style="margin-left: 10px; margin-top:10px;">Add User</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -63,12 +63,29 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="button" onclick="">Submit</button>
+                        <button type="button" class="button-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="submit button">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    // event lister for form submission
+    document.getEventById().addEventListener('submit', function(event) {
+        event.preventDefault();
+
+    // get form values
+    const firstName = document.getElementById('userFirstName').value;
+    const lastName = document.getElementById('userLastName').value;
+    const username = document.getElementById('userName').value;
+    const email = document.getElementById('userEmail').value;
+    const password = document.getElementById('userPassword').value;
+
+    //deebug - print alert
+    alert(firstName + ' ' + lastName + ' ' + username + ' ' + email + ' ' + password);
+    }); 
+
+</script>
 @endsection

@@ -1,16 +1,3 @@
-.theme-color {
-    color: #c13d15;
-}
-
-.button  {
-    width: 120px;
-    height: 40px;
-    background-color: #c13d15;
-    color: white;
-    border-radius: 10px;
-    border: none;
-}
-
 .right-align{
    float: right;
    margin-right: 20px; 
@@ -22,7 +9,25 @@
  }
 
  .modal-header{
-    background-color: #c13d15;
+    background-color: #f9764ef1;
     color: white;
     opacity: 60%;
  }
+
+.button  {
+    width: 140px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color: #f9764ef1;
+}
+
+.button-secondary  {
+    width: 140px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color: #f9764e91;
+}
